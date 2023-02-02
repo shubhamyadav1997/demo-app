@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    
+<title>Task</title>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color: black;
+    }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  
+  text-align: center;
+  padding: 8px;
+  color:white;
+}
+
+
+tr:nth-child(even) {
+  background-color: #23282D;
+}
+
+.header{
+    display:flex;
+    
+    width:100%;
+    height:100px;
+    
+}
+.first{
+    width:80%;
+    height:100px;
+   
+}
+.h1{
+    float:left;
+    color:white;
+    margin-top:50px;
+    padding-left:30px;
+   
+  
+}
+.h2{
+    color:white;
+}
+.img{
+width:30%;
+
+margin-left:40px;
+height:100px;
+
+}
+.img1{
+    height:90%;
+    float:right;
+    padding-right:40px;
+   
+   
+    
+    
+}
+.img2{
+    position:relative;
+    height:30%;
+    top:62px;
+    left:-269px;
+   
+}
+.second{
+    display:flex;
+   
+    height: 50px;
+    width:100%;
+   
+}
+.delete{
+    color: white;
+  margin-top:-27px;
+    padding-left:20px;
+    font-size:20px;
+}
+.s1{
+    display: flex;
+    width:80px;
+    height:30px;
+    border:1px solid white;
+    margin-left:65%;
+    border-radius:7px;
+    margin-top:5px;
+
+    
+}
+.s2{
+   
+    width:90px;
+    height:30px;
+    border:1px solid white;
+    margin-left:10px;
+    border-radius:7px;
+    margin-top:5px;
+
+    
+}
+.s3{
+    width:100px;
+    height:30px;
+    border:1px solid white;
+    margin-left:10px;
+    border-radius:7px;
+    margin-top:5px;
+}
+.modify{
+    color:white;
+    padding-left:25px;
+    font-size:20px;
+    margin-top:-27px;
+}
+.new{
+    color:white;
+    padding-left:6px;
+    font-size:20px;
+    margin-top:-5px;
+}
+.img5{
+    position: relative;
+    height:60%;
+    left:-30px;
+    margin-top:0px;
+}
+
+
+
+.img4{
+    height:60%;
+    padding-left:3px;
+    margin-top:4px;
+}
+
+
+#radio1{
+    accent-color: green;
+   
+    width: 50%;
+    height: 1.5em;
+    
+}
+#radio2{
+    accent-color: blue;
+    width: 50%;
+    height: 1.5em;
+}
+#radio3{
+    accent-color: yellow;
+    width: 50%;
+    height: 1.5em;
+}
+#radio4{
+    accent-color: red;
+    width: 50%;
+    height: 1.5em;
+}
+#radio5{
+    accent-color: white;
+    width: 50%;
+    height: 1.5em;
+}
+#radio6{
+    accent-color: blue;
+    width: 50%;
+    height: 1.5em;
+}
+.s{
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        .dt{
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        input{
+            background-color: #3A434C;
+            border-radius: 5px;
+            border: 1px solid #FFFFFF29;
+            color: white;
+        }
+        .com{
+            position: relative;
+            left: -30px;
+            top: 25px;
+        }
+</style>
+    </head>
+    <body>
+        <div class="main">
+        <div class="header">
+          <div class="first">
+            <h1 class="h1">Project</h1><img class="img2" src="arrow.png"><h1 class="h1">Project Name</h1>
+          </div>
+            <div class="img">
+            <img class="img1" src="logo.png">
+            </div><br>
+            
+        
+        </div>
+        <div class="second">
+            
+            
+               <button  onclick="exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"style="background-color:black;"class="s1">
+                <img class="img4" src="Group 50.png"><p class="new">New</p>
+            </button>
+            
+            <button onclick="exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"style="background-color:black;"class="s3">
+               
+                <img class="img5" src="Group 55.png"><p class="modify">Modify</p>
+            </button>
+            <button style="background-color:black;"class="s2">
+               
+                <img class="img5" src="Group 48.png"><p class="delete">Delete</p>
+            </button>
+            
+           
+        </div>
+
+    </div>
+        
+        <table>
+ <tr>
+    <th><input type="checkbox">
+    </th>
+    <th>Taskid</th>
+    <th>Task</th>
+    <th>StartDate</th>
+    <th>EndDate</th>
+    <th>Assigned to</th>
+    <th>Comments</th>
+    <th>Status</th>
+  </tr>
+ 
+  <tr>
+    
+    <td><input type="checkbox"></td>
+    <td>1</td>
+    <td>1</td>
+    <td>10-2-2023</td>
+    <td>20-2-2023</td>
+    <td>shubham</td>
+    <td>shubham</td>
+    <td><input id="radio1" type="radio"></td>
+  </tr>
+  
+  <tr>
+    <td><input type="checkbox"></td>
+    <td>1</td>
+    <td>1</td>
+    <td>10-2-2023</td>
+    <td>20-2-2023</td>
+    <td>shubham</td>
+    <td>shubham</td>
+    <td><input id="radio2" type="radio"></td>
+  </tr>
+  <tr>
+    <td><input type="checkbox"></td>
+     <td>1</td>
+    <td>1</td>
+    <td>10-2-2023</td>
+    <td>20-2-2023</td>
+    <td>shubham</td>
+    <td>shubham</td>
+    <td><input id="radio3" type="radio"></td>
+  </tr>
+  <tr>
+    <td><input type="checkbox"></td>
+    <td>1</td>
+    <td>1</td>
+    <td>10-2-2023</td>
+    <td>20-2-2023</td>
+    <td>shubham</td>
+    <td>shubham</td>
+    <td><input id="radio4" type="radio"></td>
+  </tr>
+  <tr>
+    <td><input type="checkbox"></td>
+    <td>1</td>
+    <td>1</td>
+    <td>10-2-2023</td>
+    <td>20-2-2023</td>
+    <td>shubham</td>
+    <td>shubham</td>
+    <td><input id="radio5" type="radio"></td>
+  </tr>
+  <tr>
+    <td><input type="checkbox"></td>
+    <td>1</td>
+    <td>1</td>
+    <td>10-2-2023</td>
+    <td>20-2-2023</td>
+    <td>shubham</td>
+    <td>shubham</td>
+    <td><input id="radio6" type="radio"></td>
+  </tr>
+</table>
+<!-- popup -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background-color: grey;">
+    <div class="modal-dialog" >
+      <div class="modal-content" style="background-color: #23282D;">
+        <div class="modal-header">
+          <h1  id="exampleModalLabel" style="color: white;">Edit Task</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"style="color: #AEAEAE;"></button>
+        </div>
+        <div class="modal-body">
+          <label for="" style="margin-left: 10px;color: #AEAEAE;position:relative;right: 10px;">Task Id:</label>
+         <input type="text" style="height:30px;width:100px;position:relative;left: 30px;"><br>
+        <div class="s">
+          <label for=""style='color: #AEAEAE;position:relative;right: 30px;'>Task:</label>
+          <input type="text" style="height:30px;width:350px;position:relative;left: 30px;">
+        </div>
+        <div class="dt">
+          <label for=""style='color: #AEAEAE;position:relative;right: 20px;'>Start Date:</label>
+          <input type="date" style="height:30px;width:100px;color: #AEAEAE;">
+          <label for="" style="margin-left: 50px;color: #AEAEAE;">End Date:</label>
+          <input type="date" style="height:30px;width:100px;color: #AEAEAE;">
+        </div>
+        <div class="s">
+          <label for=""style='color: #AEAEAE;' class="com">Assigned To :</label>
+          <input type="text" style="height:30px;width:350px;margin-left:70px;">
+        </div>
+        <div class="s">
+          <label for=""style='color: #AEAEAE;' class="com">Comments :</label>
+          <input type="text" style="height:30px;width:350px;margin-left:70px;">
+        </div>
+        <div class="s">
+          <label for=""style='color: #AEAEAE;position:relative;right:30px'>Status  :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="status"> 
+          <label for=""style='color: #AEAEAE;'>Closed</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="status">
+          <label for=""style='color: #AEAEAE;'>Development</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="status">
+          <label for=""style='color: #AEAEAE;'>Delevary</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="status">
+          <label for=""style='color: #AEAEAE;'>New</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="status">
+          <label for=""style='color: #AEAEAE;'>Tasting</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+            <button type="button" class="btn btn-secondary">Save</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      <!-- </div> -->
+    </div>
+  </div>
+  
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>
